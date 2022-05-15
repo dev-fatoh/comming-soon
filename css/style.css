@@ -24,21 +24,26 @@ html{
 body{
     width: 100%;
     margin: 0 auto;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
 }
 img{
     width: 100%;
     display: block;
     object-fit: cover;
+    
 }
 .wrapper{
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-column-gap: 5px;
     background: linear-gradient(var(--linear-deg),var(--linear1),var(--linear2));
-    /*background-image: url("../images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;*/
+    
    
    
 }
