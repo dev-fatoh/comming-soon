@@ -42,6 +42,7 @@ img{
     grid-template-rows: auto;
     grid-column-gap: 5px;
     background: linear-gradient(var(--linear-deg),var(--linear1),var(--linear2));
+    margin-bottom: 10px;
     
    
    
@@ -147,8 +148,9 @@ form button img{
         
     }
     .wrapper{
-        grid-template-columns: 2fr 1.5fr;
+        grid-template-columns: 1.2fr 1fr;
         grid-template-rows: 20% 80%;
+        background: url("../images/bg-pattern-desktop.svg") no-repeat;
     }
     .header{
         grid-row: 1/2;
