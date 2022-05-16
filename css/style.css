@@ -23,9 +23,10 @@ html{
 }
 body{
     width: 100%;
-    margin: 0 auto;
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 img{
     width: 100%;
@@ -36,8 +37,6 @@ img{
 .wrapper{
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
-    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -143,6 +142,10 @@ form button img{
     object-fit: cover;
 }
 @media (min-width:480px){
+    html{
+    font-size:calc(62.5% + 6px);
+        
+    }
     .wrapper{
         grid-template-columns: 2fr 1.5fr;
         grid-template-rows: 20% 80%;
@@ -157,7 +160,7 @@ form button img{
         grid-row: 2/3;
         grid-column: 1/2;
         text-align: left;
-        padding: 2rem;
+        padding: 4rem;
     }
     .hero{
         grid-column: 2/-1;
